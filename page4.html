@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+</head>
+<body>
+    <h1>Creat a account</h1>
+    <hr>
+    <form>
+        <fieldset>
+            <legend >ACCOUNT</legend><BR>
+            <label for="name">Enter your name: </label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email" >Enter your e-mail: </label>
+            <input type="email" id="email" name="email" required placeholder="abc@hotmail.com"><br>
+
+            <label for="password">Enter your password: </label>
+            <input type="password" maxlength="10" minlength="8" name="password" id="password" required><br>
+
+            <label name="re_password">Confirm your password: </label>
+            <input type="password" maxlength="10" minlength="8" id="re_password" name="re_password" required>
+        </fieldset>
+        <fieldset>
+            <legend>ADDRESS</legend>
+            <dl type="none">
+                <li>
+                    <label for="city">what is the name of the city:</label>
+                    <select name="city" id="city">
+                        <option value="sp">São Paulo</option>
+                        <option value="mg" selected>Belo Horizonte</option>
+                        <option value="vi">Vitória</option>
+                    </select>
+                </li><br>
+                <li>
+                    <label for="number">type the number of the house: </label>
+                    <input type="text" id="number" name="number" required>
+                </li>
+                <br>
+                <li>
+                    <label for="cep">type the cep: </label>
+                    <input type="text" id="cep" name="cep" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}">
+                </li>
+
+            </dl>
+        </fieldset>
+        <button type="submit" >Submit</button>
+
+    </form>
+
+    <a href="index.html">Go BACK TO MAIN PAGE</a>
+</body>
+</html>
